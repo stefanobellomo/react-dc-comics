@@ -10,7 +10,15 @@
     height: auto;
 }
 
-footer {
+/* footer {
+    position: relative;
+    background-image: url(./assets/img/footer-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+} */
+
+.dc-footer-top {
     position: relative;
     background-image: url(./assets/img/footer-bg.jpg);
     background-size: cover;
@@ -41,4 +49,16 @@ h5 {
     position: absolute;
     top: -27%;
     right: 10%;
+}
+
+.dc-bottom {
+    background: #303030;
+    position: relative;
+
+}
+
+.soc-icon {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
 }

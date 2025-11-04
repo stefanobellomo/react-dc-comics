@@ -1,2 +1,11 @@
 @import url('bootstrap');
 @import url('bootstrap-icons');
+
+.bg-dc {
+    background: #0282F9;
+}
+
+.icon {
+    width: 40px;
+    height: auto;
+}

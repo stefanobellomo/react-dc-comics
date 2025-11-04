@@ -1,8 +1,8 @@
-import dc_logo from './assets/img/dc-logo.png'
+import dc_logo from '../assets/img/dc-logo.png'
 
 export default function Header() {
     return (<header>
-        <div className='container d-flex align-items-center justify-content-between'>
+        <div className='container d-flex align-items-center justify-content-between p-3'>
             <img src={dc_logo} alt="logo" />
             <nav className="nav justify-content-center">
                 <a className="nav-link" href="#">CHARACTERS</a>

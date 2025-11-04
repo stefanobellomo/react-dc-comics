@@ -10,30 +10,37 @@ function App() {
   return (
     <>
       <Header />
-      <main className="container">
-        <nav className="nav justify-content-center">
-          <div>
-            <img src={Digital_comics} alt="digital" />
-            <a className="nav-link" href="#">DIGITAL COMICS</a>
-          </div>
-          <div>
-            <img src={DC_merch} alt="merch" />
-            <a className="nav-link" href="#">DC MERCHANDISE</a>
-          </div>
-          <div>
-            <img src={Subs} alt="subscrition" />
-            <a className="nav-link" href="#">SUBSCRIPTION</a>
-          </div>
-          <div>
-            <img src={Comic_shop} alt="shop" />
-            <a className="nav-link" href="#">COMIC SHOP LOCATOR</a>
-          </div>
-          <div>
-            <img src={DC_visa} alt="visa_card" />
-            <a className="nav-link" href="#">DC POWER VISA</a>
-          </div>
-        </nav>
+      <main className="bg-dc py-3">
+        <div className="container">
+          <nav className="nav justify-content-between gap-3">
+            <div className="d-flex align-items-center gap-2">
+              <img src={Digital_comics} className="icon" alt="digital" />
+              <a className="nav-link text-white p-0" href="#">DIGITAL COMICS</a>
+            </div>
+
+            <div className="d-flex align-items-center gap-2">
+              <img src={DC_merch} className="icon" alt="merch" />
+              <a className="nav-link text-white p-0" href="#">DC MERCHANDISE</a>
+            </div>
+
+            <div className="d-flex align-items-center gap-2">
+              <img src={Subs} className="icon" alt="subscription" />
+              <a className="nav-link text-white p-0" href="#">SUBSCRIPTION</a>
+            </div>
+
+            <div className="d-flex align-items-center gap-2">
+              <img src={Comic_shop} className="icon" alt="shop" />
+              <a className="nav-link text-white p-0" href="#">COMIC SHOP LOCATOR</a>
+            </div>
+
+            <div className="d-flex align-items-center gap-2">
+              <img src={DC_visa} className="icon" alt="visa card" />
+              <a className="nav-link text-white p-0" href="#">DC POWER VISA</a>
+            </div>
+          </nav>
+        </div>
       </main>
+
 
     </>
   )

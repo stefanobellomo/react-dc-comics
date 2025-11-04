@@ -1,6 +1,18 @@
 @import url('bootstrap');
 @import url('bootstrap-icons');
 
+:root {
+    --ff-body: "Open Sans", sans-serif;
+}
+
+body {
+    font-family: var(--ff-body);
+}
+
+.nav-link {
+    color: #484a4b;
+}
+
 .bg-dc {
     background: #0282F9;
 }
@@ -11,6 +23,7 @@
 }
 
 .dc-footer-top {
+    padding-top: 1rem;
     position: relative;
     background-image: url(./assets/img/footer-bg.jpg);
     background-size: cover;
@@ -28,18 +41,19 @@ ul {
 }
 
 h5 {
-    color: white;
+    font-size: 0.6rem;
+    color: #fffef0;
 }
 
 .dc-foot-link {
     text-decoration: none;
-    color: lightgray;
+    color: #727c7b;
 }
 
 .logo_ft {
     height: 420px;
     position: absolute;
-    top: -27%;
+    top: -45%;
     right: 10%;
 }
 
@@ -52,4 +66,14 @@ h5 {
     width: 28px;
     height: 28px;
     object-fit: contain;
+}
+
+.btn {
+    border: 1px, solid, #0282F9;
+    color: #fffef0;
+}
+
+span {
+    color: #087ef7;
+    font-weight: 700;
 }

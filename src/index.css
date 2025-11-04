@@ -9,3 +9,36 @@
     width: 40px;
     height: auto;
 }
+
+footer {
+    position: relative;
+    background-image: url(./assets/img/footer-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+.col {
+    font-size: 0.6rem;
+}
+
+h5 {
+    color: white;
+}
+
+.dc-foot-link {
+    text-decoration: none;
+    color: lightgray;
+}
+
+.logo_ft {
+    height: 420px;
+    position: absolute;
+    top: -27%;
+    right: 10%;
+}

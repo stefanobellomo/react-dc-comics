@@ -5,7 +5,7 @@ import Comic_shop from "../assets/img/buy-comics-shop-locator.png"
 import DC_visa from "../assets/img/buy-dc-power-visa.svg"
 
 export default function Main() {
-    <main className="bg-dc py-3">
+    return (<main className="bg-dc py-3">
         <div className="container">
             <nav className="nav justify-content-between gap-3">
                 <div className="d-flex align-items-center gap-2">
@@ -34,5 +34,5 @@ export default function Main() {
                 </div>
             </nav>
         </div>
-    </main>
+    </main>)
 }

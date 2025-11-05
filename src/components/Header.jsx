@@ -56,12 +56,12 @@ export default function Header() {
     ]
 
     return (<header>
-        <div className='container-page d-flex align-items-center justify-content-between p-3'>
+        <div className='container-page d-flex align-items-center justify-content-between'>
             <img src={dc_logo} className='head-logo' alt="logo" />
             <nav className="nav justify-content-center">
                 {
                     menu.map(item => (
-                        <a key={item.id} className={`nav-link`} href={item.link}>{item.text}</a>
+                        <a key={item.id} className={'nav-link'} href={item.link}>{item.text}</a>
                     ))
                 }
             </nav>

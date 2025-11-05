@@ -22,10 +22,15 @@ body {
 .nav-link {
     color: #484a4b;
     font-weight: 700;
-    font-size: 0.6rem;
+    font-size: 0.5rem;
+    padding: 2rem 0.5rem;
+    border-bottom: 5px solid transparent;
 }
 
-.nav-link:hover {}
+.nav-link:hover {
+    color: #0282F9;
+    border-bottom: 5px solid #0282F9;
+}
 
 .bg-dc {
     background: #0282F9;
@@ -45,11 +50,19 @@ body {
     padding: 0.3rem 0.7rem;
     background-color: #0282F9;
     transform: translateY(-100%);
-    left: 8%;
+    left: 15%;
     color: #fffef0;
     font-weight: 600;
     font-size: 0.7rem;
+}
 
+.load-list {
+    border: none;
+    padding: 0.3rem 0.7rem;
+    background-color: #0282F9;
+    color: #fffef0;
+    font-weight: 600;
+    font-size: 0.7rem;
 }
 
 .list_comics {

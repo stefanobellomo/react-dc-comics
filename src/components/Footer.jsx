@@ -5,7 +5,7 @@ import ytIcon from "../assets/img/footer-youtube.png";
 import pinIcon from "../assets/img/footer-pinterest.png";
 import periscopeIcon from "../assets/img/footer-periscope.png";
 
-const info = [
+const info_dc_comics = [
     {
         id: 1,
         link: '#',
@@ -43,6 +43,93 @@ const info = [
     }
 ]
 
+const info_dc = [
+    {
+        id: 1,
+        link: '#',
+        text: 'Terms Of Use'
+    },
+    {
+        id: 2,
+        link: '#',
+        text: 'Privacy policy'
+    },
+    {
+        id: 3,
+        link: '#',
+        text: 'Ad Choices'
+    },
+    {
+        id: 4,
+        link: '#',
+        text: 'Adversting'
+    },
+    {
+        id: 5,
+        link: '#',
+        text: 'Jobs'
+    },
+    {
+        id: 6,
+        link: '#',
+        text: 'Subscription'
+    },
+    {
+        id: 7,
+        link: '#',
+        text: 'Talent Workshop'
+    },
+    {
+        id: 8,
+        link: '#',
+        text: 'CPSC Certificates'
+    },
+    {
+        id: 9,
+        link: '#',
+        text: 'Ratings'
+    },
+    {
+        id: 10,
+        link: '#',
+        text: 'Shop Help'
+    },
+    {
+        id: 11,
+        link: '#',
+        text: 'Contact Us'
+    }
+]
+
+const info_sites = [
+    {
+        id: 1,
+        link: '#',
+        text: 'DC'
+    },
+    {
+        id: 2,
+        link: '#',
+        text: 'MAD Magazine'
+    },
+    {
+        id: 3,
+        link: '#',
+        text: 'DC Kids'
+    },
+    {
+        id: 4,
+        link: '#',
+        text: 'DC Universe'
+    },
+    {
+        id: 5,
+        link: '#',
+        text: 'DC Power Visa'
+    }
+]
+
+
 export default function Footer() {
     return (<footer>
         <div className="dc-footer-top">
@@ -52,17 +139,10 @@ export default function Footer() {
                         <h5>DC COMICS</h5>
                         <ul>
                             {
-                                info.map(item => (
+                                info_dc_comics.map(item => (
                                     <li key={item.id}><a className="dc-foot-link" href={item.link}>{item.text}</a></li>
                                 ))
                             }
-                            {/* <li><a className="dc-foot-link" href="#">Characters</a></li>
-                            <li><a className="dc-foot-link" href="#">Comics</a></li>
-                            <li><a className="dc-foot-link" href="#">Movies</a></li>
-                            <li><a className="dc-foot-link" href="#">TV</a></li>
-                            <li><a className="dc-foot-link" href="#">Games</a></li>
-                            <li><a className="dc-foot-link" href="#">Videos</a></li>
-                            <li><a className="dc-foot-link" href="#">News</a></li> */}
                         </ul>
 
                         <h5>SHOP</h5>
@@ -74,27 +154,21 @@ export default function Footer() {
                     <div className="col col-4">
                         <h5>DC</h5>
                         <ul>
-                            <li><a className="dc-foot-link" href="#">Terms Of Use</a></li>
-                            <li><a className="dc-foot-link" href="#">Privacy policy</a></li>
-                            <li><a className="dc-foot-link" href="#">Ad Choices</a></li>
-                            <li><a className="dc-foot-link" href="#">Adversting</a></li>
-                            <li><a className="dc-foot-link" href="#">Jobs</a></li>
-                            <li><a className="dc-foot-link" href="#">Subscription</a></li>
-                            <li><a className="dc-foot-link" href="#">Talent Workshop</a></li>
-                            <li><a className="dc-foot-link" href="#">CPSC Certificates</a></li>
-                            <li><a className="dc-foot-link" href="#">Ratings</a></li>
-                            <li><a className="dc-foot-link" href="#">Shop Help</a></li>
-                            <li><a className="dc-foot-link" href="#">Contact Us</a></li>
+                            {
+                                info_dc.map(item => (
+                                    <li key={item.id}><a className="dc-foot-link" href={item.link}>{item.text}</a></li>
+                                ))
+                            }
                         </ul>
                     </div>
                     <div className="col col-4">
-                        <h5>DC COMICS</h5>
+                        <h5>SITES</h5>
                         <ul>
-                            <li><a className="dc-foot-link" href="#">DC</a></li>
-                            <li><a className="dc-foot-link" href="#">MAD Magazine</a></li>
-                            <li><a className="dc-foot-link" href="#">DC Kids</a></li>
-                            <li><a className="dc-foot-link" href="#">DC Universe</a></li>
-                            <li><a className="dc-foot-link" href="#">DC Power Visa</a></li>
+                            {
+                                info_sites.map(item => (
+                                    <li key={item.id}><a className="dc-foot-link" href={item.link}>{item.text}</a></li>
+                                ))
+                            }
                         </ul>
                     </div>
                 </div>

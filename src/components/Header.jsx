@@ -7,61 +7,51 @@ export default function Header() {
             id: 1,
             link: '#',
             text: 'CHARACTERS',
-            is_active: false
         },
         {
             id: 2,
             link: '#',
             text: 'COMICS',
-            is_active: true
         },
         {
             id: 3,
             link: '#',
             text: 'MOVIE',
-            is_active: false
         },
         {
             id: 4,
             link: '#',
             text: 'TV',
-            is_active: false
         },
         {
             id: 5,
             link: '#',
             text: 'GAMES',
-            is_active: false
         },
         {
             id: 6,
             link: '#',
             text: 'COLLECTIBLES',
-            is_active: false
         },
         {
             id: 7,
             link: '#',
             text: 'VIDEO',
-            is_active: false
         },
         {
             id: 8,
             link: '#',
             text: 'NEWS',
-            is_active: false
         },
         {
             id: 9,
             link: '#',
             text: 'CARD',
-            is_active: false
         },
         {
             id: 10,
             link: '#',
             text: 'SHOP',
-            is_active: false
         },
     ]
 
@@ -71,7 +61,7 @@ export default function Header() {
             <nav className="nav justify-content-center">
                 {
                     menu.map(item => (
-                        <a key={item.id} className={`nav-link ${item.is_active ? 'current' : ''}`} href={item.link}>{item.text}</a>
+                        <a key={item.id} className={`nav-link`} href={item.link}>{item.text}</a>
                     ))
                 }
             </nav>

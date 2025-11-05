@@ -4,7 +4,6 @@ import Subs from "../assets/img/buy-comics-subscriptions.png"
 import Comic_shop from "../assets/img/buy-comics-shop-locator.png"
 import DC_visa from "../assets/img/buy-dc-power-visa.svg"
 
-// const numbers = ['ciao', 'passsst', 'cicc', 'luce']
 const comics = [
     {
         id: 1,

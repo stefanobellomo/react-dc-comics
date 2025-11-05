@@ -66,7 +66,7 @@ export default function Header() {
     ]
 
     return (<header>
-        <div className='container d-flex align-items-center justify-content-between p-3'>
+        <div className='container-page d-flex align-items-center justify-content-between p-3'>
             <img src={dc_logo} className='head-logo' alt="logo" />
             <nav className="nav justify-content-center">
                 {
@@ -74,16 +74,6 @@ export default function Header() {
                         <a key={item.id} className={`nav-link ${item.is_active ? 'current' : ''}`} href={item.link}>{item.text}</a>
                     ))
                 }
-                {/* <a className="nav-link" href="#">CHARACTERS</a>
-                <a className="nav-link" href="#">COMICS</a>
-                <a className="nav-link" href="#">MOVIES</a>
-                <a className="nav-link" href="#">TV</a>
-                <a className="nav-link" href="#">GAMES</a>
-                <a className="nav-link" href="#">COLLECTIBLES</a>
-                <a className="nav-link" href="#">VIDEOS</a>
-                <a className="nav-link" href="#">NEWS</a>
-                <a className="nav-link" href="#">FANS</a>
-                <a className="nav-link" href="#">SHOP</a> */}
             </nav>
         </div>
     </header>)

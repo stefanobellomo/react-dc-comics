@@ -162,18 +162,21 @@ const comics = [
 
 export default function Main() {
     return (
-        <main className="list_comics py-3">
+        <main className="list_comics">
 
-            <div className="container">
+            <div className="bg-top-main"></div>
+
+            <div className="container-page py-3">
+                <button className="current-list">CURRENT SERIES</button>
                 <div className="row d-flex row-cols-6 g-3">
 
                     {
                         comics.map(comic => (
                             <div className="col" key={comic.id}>
-                                <div className="card">
-                                    <img className="card-img-top" src={comic.thumb} alt="#" />
-                                    <div className="card-body">
-                                        <h6 className="card-title">{comic.title}</h6>
+                                <div className="card text-align-left">
+                                    <img className="card-img-top rounded-0" src={comic.thumb} alt="#" />
+                                    <div className="card-body ">
+                                        <h6 className="card-title">{comic.series}</h6>
                                     </div>
                                 </div>
                             </div>
@@ -185,7 +188,7 @@ export default function Main() {
 
             <div className="bg-dc py-3">
 
-                <div className="container">
+                <div className="container-page">
                     <nav className="nav justify-content-between gap-3">
                         <div className="d-flex align-items-center gap-2">
                             <img src={Digital_comics} className="icon" alt="digital" />

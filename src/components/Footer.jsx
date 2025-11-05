@@ -46,7 +46,7 @@ const info = [
 export default function Footer() {
     return (<footer>
         <div className="dc-footer-top">
-            <div className="container d-flex">
+            <div className="container-page d-flex">
                 <div className="row">
                     <div className="col col-4">
                         <h5>DC COMICS</h5>
@@ -104,7 +104,7 @@ export default function Footer() {
 
 
         <section className="dc-bottom py-4">
-            <div className="container">
+            <div className="container-page">
                 <div className="row g-3 d-flex align-items-center justify-content-between">
 
                     <div className="col-auto">

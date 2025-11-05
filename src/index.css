@@ -9,6 +9,12 @@ body {
     font-family: var(--ff-body);
 }
 
+.container-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
 .head-logo {
     height: 4rem;
 }
@@ -25,6 +31,27 @@ body {
     background: #0282F9;
 }
 
+.bg-top-main {
+    width: 100%;
+    height: 200px;
+    background-image: url(./assets/img/jumbotron.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.current-list {
+    position: absolute;
+    border: none;
+    padding: 0.3rem 0.7rem;
+    background-color: #0282F9;
+    transform: translateY(-100%);
+    left: 8%;
+    color: #fffef0;
+    font-weight: 600;
+    font-size: 0.7rem;
+
+}
+
 .list_comics {
     background-color: #303030;
 }
@@ -32,13 +59,18 @@ body {
 .card {
     background-color: #303030;
     border: none;
+    padding-top: 1rem;
+}
+
+.card-body {
+    padding: 0.4rem 0;
+    text-transform: uppercase;
 }
 
 .card-title {
     font-size: 0.6rem;
-    font-weight: 700;
     color: #fffef0;
-    text-align: center;
+    font-weight: 500;
 }
 
 .icon {

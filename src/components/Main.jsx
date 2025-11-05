@@ -166,7 +166,9 @@ export default function Main() {
             <div className="bg-top-main"></div>
 
             <div className="container-page py-3">
+
                 <button className="current-list">CURRENT SERIES</button>
+
                 <div className="row d-flex row-cols-6 g-3">
 
                     {

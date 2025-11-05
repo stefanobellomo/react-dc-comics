@@ -19,13 +19,6 @@ const footerSections = [
         ],
     },
     {
-        title: 'SHOP',
-        items: [
-            { id: 1, text: 'Shop DC', href: '#' },
-            { id: 2, text: 'Shop DC Collectibles', href: '#' },
-        ],
-    },
-    {
         title: 'DC',
         items: [
             { id: 1, text: 'Terms Of Use', href: '#' },
@@ -51,6 +44,13 @@ const footerSections = [
             { id: 5, text: 'DC Power Visa', href: '#' },
         ],
     },
+    {
+        title: 'SHOP',
+        items: [
+            { id: 1, text: 'Shop DC', href: '#' },
+            { id: 2, text: 'Shop DC Collectibles', href: '#' },
+        ],
+    },
 ];
 
 export default function Footer() {
@@ -74,5 +74,35 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
+
+            <section className="dc-bottom py-4">
+                <div className="container-page">
+                    <div className="row g-3 d-flex align-items-center justify-content-between">
+
+                        <div className="col-auto">
+                            <button className='singUp'>SIGN-UP NOW!</button>
+                        </div>
+
+                        <div className="col-auto d-flex align-items-center gap-3">
+                            <span className="upper">FOLLOW US</span>
+                            <a href="#">
+                                <img src={fbIcon} className="soc-icon" alt="Facebook" />
+                            </a>
+                            <a href="#">
+                                <img src={twIcon} className="soc-icon" alt="Twitter" />
+                            </a>
+                            <a href="#">
+                                <img src={ytIcon} className="soc-icon" alt="YouTube" />
+                            </a>
+                            <a href="#">
+                                <img src={pinIcon} className="soc-icon" alt="Pinterest" />
+                            </a>
+                            <a href="#">
+                                <img src={periscopeIcon} className="soc-icon" alt="Periscope" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </footer>)
 }

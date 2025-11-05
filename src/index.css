@@ -25,6 +25,22 @@ body {
     background: #0282F9;
 }
 
+.list_comics {
+    background-color: #303030;
+}
+
+.card {
+    background-color: #303030;
+    border: none;
+}
+
+.card-title {
+    font-size: 0.6rem;
+    font-weight: 700;
+    color: #fffef0;
+    text-align: center;
+}
+
 .icon {
     width: 30px;
     height: auto;

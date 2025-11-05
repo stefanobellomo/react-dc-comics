@@ -72,6 +72,7 @@ export default function Footer() {
                             </div>
                         ))}
                     </div>
+                    <img src={dc_logo_bg} className="logo_ft" alt="logo" />
                 </div>
             </div>
 

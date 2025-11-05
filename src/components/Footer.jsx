@@ -65,10 +65,10 @@ export default function Footer() {
                 <div className="row g-3 d-flex align-items-center justify-content-between">
 
                     <div className="col-auto">
-                        <a href="#" className="btn">SIGN-UP NOW!</a>
+                        <button className='singUp'>SIGN-UP NOW!</button>
                     </div>
 
-                    <div className="col-auto d-flex gap-3">
+                    <div className="col-auto d-flex align-items-center gap-3">
                         <span className="upper">FOLLOW US</span>
                         <a href="#">
                             <img src={fbIcon} className="soc-icon" alt="Facebook" />

@@ -4,8 +4,16 @@ import Subs from "../assets/img/buy-comics-subscriptions.png"
 import Comic_shop from "../assets/img/buy-comics-shop-locator.png"
 import DC_visa from "../assets/img/buy-dc-power-visa.svg"
 
+// const numbers = ['ciao', 'passsst', 'cicc', 'luce']
+
+
 export default function Main() {
     return (<main className="bg-dc py-3">
+        {/* <ul>
+            {numbers.map((number, index) => (
+                <li key={index}>{number}</li>
+            ))}
+        </ul> */}
         <div className="container">
             <nav className="nav justify-content-between gap-3">
                 <div className="d-flex align-items-center gap-2">

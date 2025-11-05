@@ -5,6 +5,44 @@ import ytIcon from "../assets/img/footer-youtube.png";
 import pinIcon from "../assets/img/footer-pinterest.png";
 import periscopeIcon from "../assets/img/footer-periscope.png";
 
+const info = [
+    {
+        id: 1,
+        link: '#',
+        text: 'Characters'
+    },
+    {
+        id: 2,
+        link: '#',
+        text: 'Comics'
+    },
+    {
+        id: 3,
+        link: '#',
+        text: 'Movies'
+    },
+    {
+        id: 4,
+        link: '#',
+        text: 'TV'
+    },
+    {
+        id: 5,
+        link: '#',
+        text: 'Games'
+    },
+    {
+        id: 6,
+        link: '#',
+        text: 'Videos'
+    },
+    {
+        id: 7,
+        link: '#',
+        text: 'News'
+    }
+]
+
 export default function Footer() {
     return (<footer>
         <div className="dc-footer-top">
@@ -13,13 +51,18 @@ export default function Footer() {
                     <div className="col col-4">
                         <h5>DC COMICS</h5>
                         <ul>
-                            <li><a className="dc-foot-link" href="#">Characters</a></li>
+                            {
+                                info.map(item => (
+                                    <li key={item.id}><a className="dc-foot-link" href={item.link}>{item.text}</a></li>
+                                ))
+                            }
+                            {/* <li><a className="dc-foot-link" href="#">Characters</a></li>
                             <li><a className="dc-foot-link" href="#">Comics</a></li>
                             <li><a className="dc-foot-link" href="#">Movies</a></li>
                             <li><a className="dc-foot-link" href="#">TV</a></li>
                             <li><a className="dc-foot-link" href="#">Games</a></li>
                             <li><a className="dc-foot-link" href="#">Videos</a></li>
-                            <li><a className="dc-foot-link" href="#">News</a></li>
+                            <li><a className="dc-foot-link" href="#">News</a></li> */}
                         </ul>
 
                         <h5>SHOP</h5>

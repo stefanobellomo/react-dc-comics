@@ -6,6 +6,11 @@ import twIcon from "./assets/img/footer-twitter.png";
 import ytIcon from "./assets/img/footer-youtube.png";
 import pinIcon from "./assets/img/footer-pinterest.png";
 import periscopeIcon from "./assets/img/footer-periscope.png";
+import Digital_comics from "./assets/img/buy-comics-digital-comics.png"
+import DC_merch from "./assets/img/buy-comics-merchandise.png"
+import Subs from "./assets/img/buy-comics-subscriptions.png"
+import Comic_shop from "./assets/img/buy-comics-shop-locator.png"
+import DC_visa from "./assets/img/buy-dc-power-visa.svg"
 
 function App() {
 
@@ -273,10 +278,18 @@ function App() {
     { id: 5, href: "#", alt: "Periscope", src: periscopeIcon },
   ];
 
+  const nav_main = [
+    { id: 1, src: Digital_comics, alt: "digital", label: "DIGITAL COMICS", href: "#" },
+    { id: 2, src: DC_merch, alt: "merch", label: "DC MERCHANDISE", href: "#" },
+    { id: 3, src: Subs, alt: "subscription", label: "SUBSCRIPTION", href: "#" },
+    { id: 4, src: Comic_shop, alt: "shop", label: "COMIC SHOP LOCATOR", href: "#" },
+    { id: 5, src: DC_visa, alt: "visa card", label: "DC POWER VISA", href: "#" },
+  ];
+
   return (
     <>
       <Header menu={menu} />
-      <Main comics={comics} />
+      <Main comics={comics} nav_main={nav_main} />
       <Footer sections={footerSections} social={social} />
     </>
   )

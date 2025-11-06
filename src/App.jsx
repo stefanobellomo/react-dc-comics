@@ -1,6 +1,11 @@
 import Header from "./components/Header"
 import Main from "./components/Main"
 import Footer from "./components/Footer"
+import fbIcon from "./assets/img/footer-facebook.png";
+import twIcon from "./assets/img/footer-twitter.png";
+import ytIcon from "./assets/img/footer-youtube.png";
+import pinIcon from "./assets/img/footer-pinterest.png";
+import periscopeIcon from "./assets/img/footer-periscope.png";
 
 function App() {
 
@@ -260,11 +265,19 @@ function App() {
     },
   ];
 
+  const social = [
+    { id: 1, href: "#", alt: "Facebook", src: fbIcon },
+    { id: 2, href: "#", alt: "Twitter", src: twIcon },
+    { id: 3, href: "#", alt: "YouTube", src: ytIcon },
+    { id: 4, href: "#", alt: "Pinterest", src: pinIcon },
+    { id: 5, href: "#", alt: "Periscope", src: periscopeIcon },
+  ];
+
   return (
     <>
       <Header menu={menu} />
       <Main comics={comics} />
-      <Footer sections={footerSections} />
+      <Footer sections={footerSections} social={social} />
     </>
   )
 }

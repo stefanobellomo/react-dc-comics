@@ -1,12 +1,8 @@
-import dc_logo_bg from '../assets/img/dc-logo-bg.png'
-import fbIcon from "../assets/img/footer-facebook.png";
-import twIcon from "../assets/img/footer-twitter.png";
-import ytIcon from "../assets/img/footer-youtube.png";
-import pinIcon from "../assets/img/footer-pinterest.png";
-import periscopeIcon from "../assets/img/footer-periscope.png";
 import Info from './Info';
+import dc_logo_bg from '../assets/img/dc-logo-bg.png'
+import Social from './Social';
 
-export default function Footer({ sections }) {
+export default function Footer({ sections, social }) {
     return (
         <footer>
             <div className="dc-footer-top">
@@ -28,21 +24,8 @@ export default function Footer({ sections }) {
 
                         <div className="col-auto d-flex align-items-center gap-3">
                             <span className="upper">FOLLOW US</span>
-                            <a href="#">
-                                <img src={fbIcon} className="soc-icon" alt="Facebook" />
-                            </a>
-                            <a href="#">
-                                <img src={twIcon} className="soc-icon" alt="Twitter" />
-                            </a>
-                            <a href="#">
-                                <img src={ytIcon} className="soc-icon" alt="YouTube" />
-                            </a>
-                            <a href="#">
-                                <img src={pinIcon} className="soc-icon" alt="Pinterest" />
-                            </a>
-                            <a href="#">
-                                <img src={periscopeIcon} className="soc-icon" alt="Periscope" />
-                            </a>
+                            <Social social={social} />
+
                         </div>
                     </div>
                 </div>

@@ -159,9 +159,62 @@ function App() {
     },
   ];
 
+  const menu = [
+    {
+      id: 1,
+      link: '#',
+      text: 'CHARACTERS',
+    },
+    {
+      id: 2,
+      link: '#',
+      text: 'COMICS',
+    },
+    {
+      id: 3,
+      link: '#',
+      text: 'MOVIE',
+    },
+    {
+      id: 4,
+      link: '#',
+      text: 'TV',
+    },
+    {
+      id: 5,
+      link: '#',
+      text: 'GAMES',
+    },
+    {
+      id: 6,
+      link: '#',
+      text: 'COLLECTIBLES',
+    },
+    {
+      id: 7,
+      link: '#',
+      text: 'VIDEO',
+    },
+    {
+      id: 8,
+      link: '#',
+      text: 'NEWS',
+    },
+    {
+      id: 9,
+      link: '#',
+      text: 'CARD',
+    },
+    {
+      id: 10,
+      link: '#',
+      text: 'SHOP',
+    },
+  ]
+
   return (
     <>
-      <Header />
+      <Header menu={menu} />
       <Main comics={comics} />
       <Footer />
     </>

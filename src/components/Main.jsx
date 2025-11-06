@@ -3,6 +3,7 @@ import DC_merch from "../assets/img/buy-comics-merchandise.png"
 import Subs from "../assets/img/buy-comics-subscriptions.png"
 import Comic_shop from "../assets/img/buy-comics-shop-locator.png"
 import DC_visa from "../assets/img/buy-dc-power-visa.svg"
+import Card from "./Card";
 
 export default function Main({ comics }) {
     return (

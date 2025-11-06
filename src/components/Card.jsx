@@ -1,5 +1,5 @@
-export default function Card({ thumb, series }) {
-    //    const {thumb, series} = props
+export default function Card(props) {
+    const { thumb, series } = props
 
     return (
         <div className="col">

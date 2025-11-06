@@ -1,4 +1,4 @@
-export default function Nav({ menu = [] }) {
+export default function Nav({ menu }) {
 
     return (
         <nav className="nav justify-content-center">

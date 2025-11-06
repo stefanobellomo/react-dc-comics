@@ -10,3 +10,4 @@ export default function Header({ menu }) {
         </div>
     </header>)
 }
+
